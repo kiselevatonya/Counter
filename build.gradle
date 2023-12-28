@@ -20,5 +20,9 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    
+    reports {
+        junitXml.destination = file("$buildDir/../test-results/test")
+    }
 }
 
